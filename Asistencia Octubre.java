@@ -2,6 +2,9 @@
     EJERCICIO 11: Diseñar un programa que muestre el producto de los 10 primero numeros impares
     Hacerlo en JOptionPane
  */
+
+// Mendez Lucas 
+
 package ciclos11;
 
 import javax.swing.JOptionPane;
