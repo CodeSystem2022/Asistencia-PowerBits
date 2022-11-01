@@ -49,3 +49,68 @@ public class Ciclos12 {
         
     }
 }
+ 
+
+//Machuca Nicolás
+package domain;
+
+public class Persona{
+    protected String nombre;
+    protected char genero;
+    protected int edad;
+    protected String direccion;
+    
+    //constructor vacio: este es para crear objetos sin necesidad de inicializar
+    //los atributos de la clase
+    public Persona(){//Constructor1
+        
+    }
+    public Persona(String nombre){//Constructor2
+           this.nombre = nombre;
+    }
+
+    public Herencia(String nombre, char genero, int edad, String direccion) {//Constructor3
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+        this.direccion = direccion;
+    }
+
+    public String getDireccion() {
+        return this.direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public char getGenero() {
+        return this.genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Herencia{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
+    }
+    
+}
