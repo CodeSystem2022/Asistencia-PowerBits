@@ -114,3 +114,35 @@ public class Persona{
     }
     
 }
+package test;
+
+import dominio.Persona;
+public class PersonaPrueba {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona("Osvaldo", 57000,false);
+        System.out.println("El nombre de persona1 es: "+persona1.getNombre());
+        System.out.println("El sueldo de persona1 es: "+persona1.getSueldo());
+        System.out.println("El boooleano de persona1 es: "+persona1.isEliminado());
+        
+        //Modificamos a traves de los metodos
+        persona1.setNombre("Juan Igancio");
+        System.out.println("El nuevo nombre de persona1 es: "+persona1.getNombre());
+        //persona1.nombre = "Antonela";      //No se pueden usar porque los atributos son privados
+        //System.out.println("El nombre de persona1 es: "persona1.nombre);
+        
+        //Tarea: Crear otro objeto de tipo persona, asiganr valores de manera inicial e imprimirlos,
+        //Luego modificar sus valores y volver a imprimirlos
+        Persona persona2 = new Persona("Nadia",120000,true);
+          System.out.println("\nEl nombre de persona2 es: "+persona2.getNombre());
+        System.out.println("El sueldo de persona2 es: "+persona2.getSueldo());
+        System.out.println("El boooleano de persona2 es: "+persona2.isEliminado());
+        
+        //Modificamos los datos de persona2
+        persona2.setNombre("Antonela");
+        persona2.setSueldo(140000);
+        persona2.setEliminado(false);
+         System.out.println("\nEl nuevo nombre de persona2 es: "+persona2.getNombre());
+         System.out.println("El nuevo sueldo de persona2 es: "+persona2.getSueldo());
+         System.out.println("El nuevo booleano de persona2 es: "+persona2.isEliminado()); 
+    }
+}
