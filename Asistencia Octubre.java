@@ -112,10 +112,12 @@ public class Persona{
     public String toString() {
         return "Herencia{" + "nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + '}';
     }
-    
+  
 }
-package test;
 
+//Ivana Gonzalez 
+
+package test;
 import dominio.Persona;
 public class PersonaPrueba {
     public static void main(String[] args) {
@@ -133,7 +135,7 @@ public class PersonaPrueba {
         //Tarea: Crear otro objeto de tipo persona, asiganr valores de manera inicial e imprimirlos,
         //Luego modificar sus valores y volver a imprimirlos
         Persona persona2 = new Persona("Nadia",120000,true);
-          System.out.println("\nEl nombre de persona2 es: "+persona2.getNombre());
+        System.out.println("\nEl nombre de persona2 es: "+persona2.getNombre());
         System.out.println("El sueldo de persona2 es: "+persona2.getSueldo());
         System.out.println("El boooleano de persona2 es: "+persona2.isEliminado());
         
@@ -141,9 +143,9 @@ public class PersonaPrueba {
         persona2.setNombre("Antonela");
         persona2.setSueldo(140000);
         persona2.setEliminado(false);
-         System.out.println("\nEl nuevo nombre de persona2 es: "+persona2.getNombre());
-         System.out.println("El nuevo sueldo de persona2 es: "+persona2.getSueldo());
-         System.out.println("El nuevo booleano de persona2 es: "+persona2.isEliminado()); 
+        System.out.println("\nEl nuevo nombre de persona2 es: "+persona2.getNombre());
+        System.out.println("El nuevo sueldo de persona2 es: "+persona2.getSueldo());
+        System.out.println("El nuevo booleano de persona2 es: "+persona2.isEliminado()); 
     }
 }
 
@@ -178,3 +180,29 @@ public class PersonaPrueba {
     }
 }
 
+
+//Nadia Gonzalez
+
+/*
+Ejercicio 12: Pedir un numero y calcular su factorial
+Hacerlo con las dos clases, Scanner y JOptionPane
+ */
+package ciclos12;
+
+//import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Ciclos12 {
+    public static void main(String[] args) {
+        //Scanner entrada = new Scanner(System.in);
+        long factorial = 1;
+        System.out.println("Digite un numero: ");
+        int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        for(int i = 1; i <= numero ; i++){
+            factorial *= i;
+        }
+        //System.out.println("\nEl factorial ingresado es: "+factorial);
+        JOptionPane.showMessageDialog(null, "El factorial ingresado es: "+factorial);
+    }
+}
